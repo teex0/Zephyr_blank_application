@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/home/fae/zephyrproject/zephyr/boards/st/b_u585i_iot02a/Kconfig"

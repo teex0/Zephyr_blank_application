@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/fae/zephyrproject/my-app/app'
+    source-dir: '/home/fae/zephyrproject/my-app/app'
+  board:
+    name: 'b_u585i_iot02a'
+    path:
+     - '/home/fae/zephyrproject/zephyr/boards/st/b_u585i_iot02a'
+    qualifiers: 'stm32u585xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/fae/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/fae/zephyrproject/zephyr/boards/st/b_u585i_iot02a/b_u585i_iot02a.dts'
+     - '/home/fae/zephyrproject/my-app/app/boards/b_u585i_iot02a.overlay'
+    include-dirs:
+     - '/home/fae/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/fae/zephyrproject/modules/hal/atmel/include'
+     - '/home/fae/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/fae/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/fae/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/fae/zephyrproject/modules/hal/microchip/include'
+     - '/home/fae/zephyrproject/modules/hal/microchip/dts'
+     - '/home/fae/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/fae/zephyrproject/modules/hal/nxp/dts'
+     - '/home/fae/zephyrproject/modules/hal/stm32/dts'
+     - '/home/fae/zephyrproject/modules/hal/ti/dts'
+     - '/home/fae/zephyrproject/zephyr/include'
+     - '/home/fae/zephyrproject/zephyr/include/zephyr'
+     - '/home/fae/zephyrproject/zephyr/dts/common'
+     - '/home/fae/zephyrproject/zephyr/dts/vendor'
+     - '/home/fae/zephyrproject/zephyr/dts/rx'
+     - '/home/fae/zephyrproject/zephyr/dts/x86'
+     - '/home/fae/zephyrproject/zephyr/dts/xtensa'
+     - '/home/fae/zephyrproject/zephyr/dts/sparc'
+     - '/home/fae/zephyrproject/zephyr/dts/riscv'
+     - '/home/fae/zephyrproject/zephyr/dts/posix'
+     - '/home/fae/zephyrproject/zephyr/dts/arm64'
+     - '/home/fae/zephyrproject/zephyr/dts/arm'
+     - '/home/fae/zephyrproject/zephyr/dts/arc'
+     - '/home/fae/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/fae/zephyrproject/my-app/app/boards/b_u585i_iot02a.overlay'
+  kconfig:
+    files:
+     - '/home/fae/zephyrproject/zephyr/boards/st/b_u585i_iot02a/b_u585i_iot02a_defconfig'
+     - '/home/fae/zephyrproject/my-app/app/prj.conf'
+    user-files:
+     - '/home/fae/zephyrproject/my-app/app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/fae/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/fae/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/fae/zephyrproject/.venv/bin/west build -p always -b b_u585i_iot02a .'
+  topdir: '/home/fae/zephyrproject'
+  version: '1.5.0'
