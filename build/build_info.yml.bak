@@ -1,5 +1,0 @@
-west:
-  command: /home/fae/zephyrproject/.venv/bin/west build -p always -b b_u585i_iot02a
-    .
-  topdir: /home/fae/zephyrproject
-  version: 1.5.0
